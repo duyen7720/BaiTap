@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+</head>
+<style>
+    .aaa {
+        border-bottom: 0.2px solid;
+        font-weight: bolder;
+        width: auto;
+        padding: 20px;
+    }
+
+    .aaa ::after {
+        content: "✖️";
+        position: absolute;
+        right: 20px;
+
+    }
+
+    .bbb {
+        border-bottom: 0.2px solid;
+
+        width: 1px auto;
+        padding: 20px;
+
+    }
+
+    .ccc {
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px;
+    }
+
+    button {
+        padding: 10px;
+        background-color: #007BFF;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+
+    }
+
+    button:hover {
+        background-color: #0056b3;
+
+    }
+
+    .qqq {
+        text-align: right;
+    }
+</style>
+
+<body>
+    <div style="border: 2px solid;">
+        <div class="aaa">
+            <span>Modal 1</span>
+
+
+        </div>
+        <div class="bbb"> show a second modal and hide this one with the button below</div>
+        <div class="ccc"><button> open secon modal</button></div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+    }
+
+    .khung {
+        margin: auto;
+
+        border-radius: 15px;
+        padding: 30px;
+        background-color: white;
+        width: 500px;
+
+    }
+
+    input[type=text] {
+        width: 100%;
+        padding: 8px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-right: 5px;
+
+
+
+    }
+
+    input[type=mail] {
+        width: 100%;
+        padding: 8px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+
+
+    }
+
+    .motdong {
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+
+    .tach {
+        line-height: 2;
+    }
+
+    #select {
+        width: 100%;
+        padding: 8px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .aaa {
+        border-top: 0.5px solid;
+    }
+
+    .aaa button {
+        width: 100%;
+        padding: 10px;
+        background-color: #007BFF;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .aaa button:hover {
+        background-color: #0056b3;
+    }
+
+    .motdongtrai {
+        display: flex;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+</style>
+
+<body>
+    <div class="khung">
+        <h2> Hoá đơn thanh toán </h2>
+        <div class="motdong">
+            <p><span><label for="name"> ten</label></span>
+                <span><input type="text" placeholder=" ten"> </span>
+            </p>
+            <p><span><label for="name"> Ho</label></span>
+                <span><input type="text" placeholder=" Ho"> </span>
+            </p>
+
+        </div>
+        <div class="tach">
+            <label for="">User name</label>
+            <input type="text" placeholder="Username">
+            <label for="">mail</label>
+            <input type="mail" placeholder="@gmail.com">
+            <label for="">Address</label>
+            <input type="text" placeholder="1234 main st">
+            <label for="">Address 2 (optional)</label>
+            <input type="text" placeholder="Apartment or suite">
+
+        </div>
+        <div class="motdong">
+            <p style="width: 150px;"><span><label for="country"> country </label></span>
+                <select name="" id="select">
+                    <option value="">Choose</option>
+                    <option value="">US</option>
+                    <option value="">VN</option>
+                    <option value="">TQ</option>
+                </select>
+            <p style="width: 150px;"><span><label for="state"> state</label></span>
+                <select name="" id="select">
+                    <option value="">Choose</option>
+                    <option value="">a</option>
+                    <option value="">c</option>
+                    <option value="">x</option>
+                </select>
+            <p><span><label for="zip"> zip</label></span>
+
+
+                <span><input type="text" placeholder=""> </span>
+
+            </p>
+
+
+
+        </div>
+
+
+
+        <div style="border-top: 0.5px solid; border-bottom: 0.5px solid;"> <br>
+            <input type="checkbox">shipping address is the same as my billing
+            address <br>
+            <input type="checkbox">Save this information for next time <br>
+
+            <br>
+        </div>
+        <h3>Payment</h3>
+        <input type="radio" name="a"> Credit card <br>
+        <input type="radio" name="a">Debit card <br>
+        <input type="radio" name="a">paypal <br> <br> <br>
+
+
+        <div class="motdong">
+            <p style="width: 230px;"> <span><label for="name"> name on card </label></span>
+                <span><input type="text" placeholder=" "> </span>
+            </p>
+
+            <p style="width: 230px;"> <span><label for="name"> Credit card number</label></span>
+                <span><input type="text" placeholder=""> </span>
+            </p>
+
+        </div>
+        <p> Full name as displeyed on card</p>
+
+        <div class="motdongtrai">
+            <p style="width: 180px;"> <span><label for="name"> expiration</label></span>
+                <span><input type="text" placeholder=" "> </span>
+            </p>
+
+            <p style="width: 180px;"> <span><label for="name"> CVV</label></span>
+                <span><input type="text" placeholder=""> </span>
+            </p>
+
+        </div> <br>
+        <div class="aaa"> <br> <br>
+
+            <button> Continue to checkout</button>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
