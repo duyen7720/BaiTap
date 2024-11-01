@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        .main {
+            height: 5000px;
+            background-color: rgb(220, 240, 240);
+        }
+
+        .sticky {
+            height: 50px;
+            background-color: #007BFF;
+            display: flex;
+            /* tren cung mot hang */
+            position: sticky;
+            top: 0;
+            justify-content: center;
+        }
+
+        .box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px;
+        }
+
+        .box a {
+            color: white;
+            text-decoration: none;
+            /* bo gach chan */
+
+        }
+
+        .input {
+            position: relative;
+            display: inline-block;
+
+        }
+
+        .input i {
+            position: absolute;
+            right: 10px;
+            top: 3px;
+            color: #888;
+        }
+
+        .profile i {
+            padding-right: 5px;
+            font-size: 20px;
+            color: rgb(192, 196, 200);
+
+        }
+
+        #id {
+            width: 110px;
+            background-color: #007BFF;
+            border: none;
+            color: white;
+            font-size: 14px;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="sticky">
+            <div class="box">
+                <a href="">Trang Chu</a>
+            </div>
+            <div class="box">
+                <a href="">San Pham</a>
+            </div>
+            <div class="box ">
+                <div class="input">
+                    <input type="search" placeholder="Tim kiem....">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="box">
+                <a href="">Gioi Thieu</a>
+            </div>
+            <div class="box">
+                <a href="">Lien He</a>
+            </div>
+            <div class="box">
+                <a href="">Dang Ky</a>
+            </div>
+            <div class="box">
+                <a href="">Dang Nhap</a>
+            </div>
+            <div class="box">
+                <div class="profile">
+                    <i class="fa-solid fa-user"></i>
+                    <select name="" id="id">
+                        <option value="">Duong Duyen</option>
+                    </select>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
