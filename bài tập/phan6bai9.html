@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            padding: 15px;
+            width: 300px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .title {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .container input {
+            width: 97%;
+            height: 36px;
+            border-radius: 4px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #1d76d5;
+        }
+
+        .social-login {
+            font-size: 14px;
+            color: #888;
+            margin: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .facebook {
+            background-color: #3b5998;
+            color: white;
+            width: 97%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .facebook:hover {
+            background-color: #4374dc;
+        }
+
+        .google {
+            background-color: #db4437;
+            color: white;
+            width: 97%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .google:hover {
+            background-color: #ad2b1f;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="title">
+                <h2>Dang ki tai khoan</h2>
+                <h2>✕</h2>
+            </div>
+            <div>
+                <label for="">so dien thoai</label><br>
+                <input type="number">
+            </div>
+            <button> Tiep Tuc</button>
+            <div class="social-login">Hoặc</div>
+            <div class="facebook">Đăng nhập với Facebook</div>
+            <div class="google">Đăng nhập với Google</div>
+            <div class="footer">
+                Bạn đã có tài khoản? <a href="#">Đăng nhập tại đây</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
