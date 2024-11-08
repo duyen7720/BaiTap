@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //cach tinh giao thua vd: 5!= 5x4x3x2x1 =120
+        let number = prompt(" nhap mot so bat ky")
+        if ((!isNaN(number) && number.trim() !== "")) {
+            number = Number(number)
+            if (number < 0) {
+                console.log("gai thua khong xac dinh")
+            } else {
+                let factorial = 1;
+                //factorial la giai thua
+                for (let i = 1; i <= number; i++) {
+                    factorial *= i;
+                    // cho 1 gia tri i , i nho hon number de vong lap dung lai, i se tang len mot gia tri
+                    //giai thua( factorial) là biến lưu trữ kết quả của giai thừa bằng factorial*i;
+                    //i tăng và factorial cũng ứng với giá trị của mỗi vòng lặp
+
+                    // lan lap 1 i = 1*1
+                    //lan lap 2 i =2, factorial 1*2
+                    //lan lap 3 i =3 ,factorial 2*3=6
+                    //lan lap 4 i =4, factorial 6*6
+                }
+                console.log("gai thua cua" + number + "la" + factorial);
+            }
+        }
+        else {
+            alert("gia tri khong dung, vui long nhap lai so")
+        }
+    </script>
+</body>
+
+</html>

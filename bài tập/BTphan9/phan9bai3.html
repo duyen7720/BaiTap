@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let days = prompt("Vui lòng nhập thứ trong tuần")
+        if (days.trim() !== "" && days > 1 && days < 9) {
+            switch (days) {
+                case 2:
+                    console.log("monday")
+                    break;
+                case 3:
+                    console.log("tuesday")
+                    break;
+                case 4:
+                    console.log("wednesday")
+                    break;
+                case 5:
+                    console.log("thursday")
+                    break;
+                case 6:
+                    console.log("friday")
+                    break;
+                case 7:
+                    console.log("saturday")
+                    break;
+
+                default:
+                    console.log(" sunday")
+                    break;
+            }
+        }
+        else {
+            alert(" gia tri khon hop le vui long nhap lai, *neu ban muon nhap Chu Nhat vui long nhap 8*")
+        }
+
+    </script>
+</body>
+
+</html>

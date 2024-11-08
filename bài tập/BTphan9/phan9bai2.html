@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let input = prompt("Nhập vào một số bất kì")
+        if ((!isNaN(input)) && input.trim() !== "") {
+            let number = Number(input);
+            if (number % 2 === 0) {
+
+                console.log('so' + number + "la so chan.")
+            }
+            else { console.log(" so" + number + " la so le") }
+        }
+        else {
+            alert("khong hop le vui long nhap mot so")
+        }
+    </script>
+</body>
+
+</html>
