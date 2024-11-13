@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    const array = [5, 6, 7, 8, 9, "hello", " hi", 2.5, 9, 5, 1, true, 'javaScript'];
+    const userInput = prompt(" nhap gia tri can tim kiem trong mang:");
+    const valueToFind = isNaN(userInput) ? userInput : Number(userInput)
+    //tim kiem so lan xuat hien
+    const count = array.filter(element => element === valueToFind).length;
+    if (count > 0) {
+        console.log(`gia tri"${userInput}" xuat hien: ${count} lan trong mang.`)
+    }
+    else ("khong co gia tri naao ton tai")
+</script>
+
+</html>

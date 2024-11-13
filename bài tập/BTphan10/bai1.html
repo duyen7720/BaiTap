@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+
+    const array = [1, 2, 2.5, 'hello', 6, 7, 8, 9, 'world', 6];
+    //loc cacc phan tu so nguyen
+    const integerElement = array.filter(element => Number.isInteger(element));
+    //in ra man hinh
+    if (integerElement.length > 0) {
+        console.log("cac so nguyen trong mang la:", integerElement);
+    } else {
+        console.log(" Trong mang khong ton tai so nguyen")
+    }
+</script>
+
+</html>

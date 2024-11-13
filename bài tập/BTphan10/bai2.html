@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    const array = [5, 6, 7, 8, 9, "hello", " hi", 2.5, 9, 1, true, 'javaScript'];
+    const userInput = prompt(" nhap gia tri can tim kiem trong mang:");
+    //tim kiem vvi tri
+    const index = array.indexOf(userInput);
+    if (index !== -1) {
+        console.log(`gia tri"${userInput}" ton tai o vi tri: ${index}`)
+    } else {
+        console.log("gia tri khong ton tai trong mang")
+    }
+</script>
+
+</html>
